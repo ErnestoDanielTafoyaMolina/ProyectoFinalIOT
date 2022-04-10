@@ -92,7 +92,6 @@ void loop() {
   }
   
    val=analogRead(sensor);//lee el valor que hay en el sensor
-   Serial.println(sensor);//imprime el valor en el monitor srial
    temp=val*5000*.0/1024/10;//convierte los valores a valores legibles
    Serial.println(temp);//imprime la temperatura
    bt.println(temp);//envia la temperatura a la aplicacion
